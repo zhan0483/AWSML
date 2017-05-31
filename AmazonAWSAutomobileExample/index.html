@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Amazon AWS Machine Learning Simple - Car Price Prediction</title>
+    
+</head>
+<body>
+    <h1>Amazon AWS Machine Learning Simple <br>Car Price Prediction</h1>
+    <div id="home">
+        <form>
+            <fieldset>
+                <legend>Please fill all the fields below</legend>
+
+                <label for="symboling">Symboling</label>
+                <input id="symboling" name= "symboling" value="2"/>
+                
+                <label for="normalized_losses">Normalized Losses</label>
+                <input id="normalized_losses" name= "normalized_losses" value="164"/>
+                
+                <label for="make">Make</label>
+                <input id="make" name= "make" value="audi"/>
+                
+                <label for="fuel_type">Fuel Type</label>
+                <input id="fuel_type" name= "fuel_type" value="gas"/>
+                
+                <label for="aspiration">Aspiration</label>
+                <input id="aspiration" name= "aspiration" value="std"/>
+                
+                <label for="num_of_doors">Number of Doors</label>
+                <input id="num_of_doors" name= "num_of_doors" value="four"/>
+                
+                <label for="body_style">Body Style</label>
+                <input id="body_style" name= "body_style" value="sedan"/>
+                
+                <label for="drive_wheels">Drive Wheels</label>
+                <input id="drive_wheels" name= "drive_wheels" value="4wd"/>
+                
+                <label for="engine_location">Engine Location</label>
+                <input id="engine_location" name= "engine_location" value="front"/>
+                
+                <label for="wheel_base">Wheel Base</label>
+                <input id="wheel_base" name= "wheel_base" value="99.5"/>
+                
+                <label for="length">Length</label>
+                <input id="length" name= "length" value="176.6"/>
+                
+                <label for="width">Width</label>
+                <input id="width" name= "width" value="66.4"/>
+                
+                <label for="height">Height</label>
+                <input id="height" name= "height" value="54.3"/>
+                
+                <label for="curb_weight">Curb Weight</label>
+                <input id="curb_weight" name= "curb_weight" value="2824"/>
+                
+                <label for="engine_type">Engine Type</label>
+                <input id="engine_type" name= "engine_type" value="ohc"/>
+                
+                <label for="num_of_cylinders">Number of Cylinders</label>
+                <input id="num_of_cylinders" name= "num_of_cylinders" value="five"/>
+                
+                <label for="engine_size">Engine Size</label>
+                <input id="engine_size" name= "engine_size" value="136"/>
+                
+                <label for="fuel_system">Fuel System</label>
+                <input id="fuel_system" name= "fuel_system" value="mpfi"/>
+                
+                <label for="bore">Bore</label>
+                <input id="bore" name= "bore" value="3.19"/>
+                
+                <label for="stroke">Stroke</label>
+                <input id="stroke" name= "stroke" value="3.4"/>
+                
+                <label for="compression_ratio">Compression Ratio</label>
+                <input id="compression_ratio" name= "compression_ratio" value="8"/>
+                
+                <label for="horsepower">Horsepower</label>
+                <input id="horsepower" name= "horsepower" value="115"/>
+                
+                <label for="peak_rpm">Peak RPM</label>
+                <input id="peak_rpm" name= "peak_rpm" value="5500"/>
+                
+                <label for="city_mpg">City MPG</label>
+                <input id="city_mpg" name= "city_mpg" value="18"/>
+                
+                <label for="highway_mpg">Highway MPG</label>
+                <input id="highway_mpg" name= "highway_mpg" value="22"/>
+                
+                <label for="price">Price</label>
+                <input id="price" name= "price" value="17450"/>
+                
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div id="result" class="hidden">
+        <h2>Result</h2>
+        <p>Response:</p>
+        <spam>json</spam>
+        <button id="return">New</button>
+    </div>
+    
+    <script src="aws_machine_learning.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.58.0.min.js"></script>
+    <footer>
+        <p>&copy; <time datetime="2017">2017</time> <a href="http://www.algonquincollege.com/appliedresearch/" target="_blank">Applied Research and Innovation</a></p>
+    </footer>
+
+    
+</body>
+</html>

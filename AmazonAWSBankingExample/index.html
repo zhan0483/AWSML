@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Banking</title>
+</head>
+<body>
+    <div id="home">
+        <h1>Banking</h1>
+        <form>
+            <fieldset>
+                <legend>Please fill all the fields below</legend>
+
+                <label for="age">Age</label>
+                <input id="age" value="44" type="number" name="age" min="1" />
+
+                <label for="job">Job</label>
+                <input id="job" value="blue-collar" type="text" name="job" />
+
+                <label for="marital">Marital</label>
+                <input id="marital" value="married" type="text" name="marital" />
+
+                <label for="education">Education</label>
+                <input id="education" value="basic.4y" type="text" name="education" />
+
+                <label for="default">Default</label>
+                <input id="default" value="unknown" type="text" name="default" />
+
+                <label for="housing">Housing</label>
+                <input id="housing" value="yes" type="text" name="housing" />
+
+                <label for="loan">Loan</label>
+                <input id="loan" value="no" type="text" name="loan" />
+
+                <label for="contact">Contact</label>
+                <input id="contact" value="cellular" type="text" name="contact" />
+
+                <label for="month">Month</label>
+                <input id="month" value="aug" type="text" name="month" />
+
+                <label for="day_of_week">Day of Week</label>
+                <input id="day_of_week" value="thu" type="text" name="day_of_week"/>
+
+                <label for="duration">Duration</label>
+                <input id="duration" value="210" type="number" name="duration" min=0 step="1"/>
+
+                <label for="campaign">Campaign</label>
+                <input id="campaign" value="1" type="number" name="campaign" min=0 step="1"/>
+
+                <label for="pdays">pdays</label>
+                <input id="pdays" value="999" type="number" name="pdays" min=0 step="1"/>
+
+                <label for="previous">Previous</label>
+                <input id="previous" value="0" type="number" name="previous" min=0/>
+
+                <label for="poutcome">Poutcome</label>
+                <input id="poutcome" value="nonexistent" type="text" name="poutcome"/>
+
+                <label for="emp_var_rate">Emp Var Rate</label>
+                <input id="emp_var_rate" value="1.4" type="number" name="emp_var_rate" min = 0 step = "0.1 "/>
+
+                <label for="cons_price_idx">Cons Price Idx</label>
+                <input id="cons_price_idx" value="93.444" type="number" name="cons_price_idx" min=1 step = "0.001 "/>
+
+                <label for="cons_conf_idx">Cons Conf Idx</label>
+                <input id="cons_conf_idx" value="-36.1" type="text" name="cons_conf_idx"/>
+
+                <label for="euribor3m">Euribor3m</label>
+                <input id="euribor3m" value="4.963" type="number" name="euribor3m" min=1 step="0.1"/>
+                
+                <label for="nr_employed">Nr Employed</label>
+                <input id="nr_employed" value="5228.1" type="number" name="nr_employed" min=1 step="0.1"/>
+
+                <label for="y">y</label>
+                <input id="y" value="0" type="number" name="y" min=0 max = 1 step="1"/>
+            </fieldset>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div id="result" class="hidden">
+        <h2>Will this customer subscribe to my new product?</h2>
+        <h1 id="answer">Result</h1>
+        <p>Response:</p>
+        <spam>json</spam>
+        <button id="return">New</button>
+    </div>
+    <script src="aws_machine_learning.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.58.0.min.js"></script>
+</body>
+</html>
